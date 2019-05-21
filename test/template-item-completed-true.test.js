@@ -4,10 +4,9 @@ QUnit.module('list item checked equals true');
 function taskCompleted(todo) {
     return /*html*/ `
         <li>
-            <input type="checkbox" checked>${todo.task}
+            <input type="checkbox" type="checkbox" checked>${todo.task}
         </li>
     `;
-
 }
 
 test('list item checked equals true', (assert) => {
@@ -19,7 +18,7 @@ test('list item checked equals true', (assert) => {
 
     const expected = /*html*/ `
         <li>
-            <input type="checkbox" checked>Kettle Chips
+            <input type="checkbox" type="checkbox" checked>Kettle Chips
         </li>
     `;
 
